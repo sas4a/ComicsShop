@@ -1,12 +1,16 @@
 
 <h1> Все комиксы</h1>
 <h3>@Model.currentCategory</h3>
+<div class="row mt-5 mb-2">
 @{
-    foreach (var comic in Model.AllComics)
-    {
-        <div>
-            <h2>Модель: @comic.name</h2>
-            <p>Цена: @comic.price.ToString("c")</p>
+    foreach (var comic in Model.AllComics){
+        <div class="col-lg-4">
+            <img class="img-thumbnail" src="@comic.img" alt="@comic.name"/>
+            <h2>@comic.name</h2>
+            <p>@comic.shortDesc</p>
+            <p>Price: @comic.price.ToString("c")</p>
+            <p><a class="btn btn-warning" href="#">Подробнее</a></p>
         </div>
     }
 }
+</div>
