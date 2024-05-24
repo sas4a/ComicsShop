@@ -19,7 +19,7 @@ public class ComicsController : Controller
         ViewBag.Title = "Page with comics";
         ComicsListViewModel obj = new ComicsListViewModel();
         obj.AllComics = _allComics.Comics;
-        obj.currentCategory = "Comics";
+        obj.currentCategory = "All Comics";
         return View(obj);
     }
 }
