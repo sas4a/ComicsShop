@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="~/css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>@ViewBag.Title</title>
+  <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="~/css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-v
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Welcome☺</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,32 +16,29 @@ v
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">DC <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/Comics/List/all">Main</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Marvel</a>
+          <a class="nav-link" href="/Comics/List/dc">DC</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="/Comics/List/marvel">Marvel</a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
-        <button class="btn btn-outline-success my-2 my-sm-0" href="#">Cart
-        </button>
+        <button class="btn btn-outline-success my-2 my-sm-0" href="#">Cart</button>
       </form>
     </div>
   </nav>
 </header>
 
-<div  class="container mt-5">
+<div class="container mt-5">
   @RenderBody()
 </div>
 <footer class="container">
-  <p>© 2024 COMICSSHOP. Pumped up by Sas4a.
+  <p>© 2024 COMICSSHOP. Pumped up by Sas4a.</p>
 </footer>
 
 <script src="~/js/bootstrap.min.js"></script>
-
-
 </body>
 </html>

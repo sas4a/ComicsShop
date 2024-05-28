@@ -22,7 +22,7 @@ public class MockComics : IAllComics
                 price = 6,
                 isFavourite = true,
                 available = true,
-                Category = _comicsCategory.AllCategories.Last()
+                Category = _comicsCategory.AllCategories.First()
             },
 
             new Comic
@@ -37,7 +37,7 @@ public class MockComics : IAllComics
                 price = 6,
                 isFavourite = false,
                 available = false,
-                Category = _comicsCategory.AllCategories.Last()
+                Category = _comicsCategory.AllCategories.First()
             },
 
             new Comic
@@ -58,7 +58,7 @@ public class MockComics : IAllComics
                 price = 8,
                 isFavourite = true,
                 available = true,
-                Category = _comicsCategory.AllCategories.Last()
+                Category = _comicsCategory.AllCategories.First()
             },
             new Comic
             {
@@ -69,11 +69,11 @@ public class MockComics : IAllComics
                            "friends - new and old. But Bruce's friends and enemies weren't the only ones intent " +
                            "on getting in their way. The web became tighter and tighter, and it became harder and " +
                            "harder for Batman to see a path forward.",
-                img = "img/2024-05-21_13-42-50.png",
+                img = "/img/2024-05-21_13-42-50.png",
                 price = 5,
                 isFavourite = false,
                 available = true,
-                Category = _comicsCategory.AllCategories.Last()
+                Category = _comicsCategory.AllCategories.First()
             },
             new Comic
             {
@@ -87,7 +87,7 @@ public class MockComics : IAllComics
                 price = 6,
                 isFavourite = true,
                 available = true,
-                Category = _comicsCategory.AllCategories.First()
+                Category = _comicsCategory.AllCategories.Last()
             },
             new Comic
             {
@@ -100,7 +100,7 @@ public class MockComics : IAllComics
                 price = 4,
                 isFavourite = false,
                 available = true,
-                Category = _comicsCategory.AllCategories.First()
+                Category = _comicsCategory.AllCategories.Last()
             },
             new Comic
             {
@@ -116,7 +116,7 @@ public class MockComics : IAllComics
                 price = 7,
                 isFavourite = true,
                 available = true,
-                Category = _comicsCategory.AllCategories.First()
+                Category = _comicsCategory.AllCategories.Last()
             },
             new Comic
             {
