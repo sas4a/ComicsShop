@@ -8,21 +8,17 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
-        // Добавление сервисов в контейнер
+        
         builder.Services.AddTransient<IAllComics, MockComics>();
         builder.Services.AddTransient<IComicsCategory, MockCategory>();
-
-        // Добавление MVC и контроллеров с представлениями
+        
         builder.Services.AddControllersWithViews();
-
-        // Настройка культуры по умолчанию
+        
         var cultureInfo = new CultureInfo("en-US");
         CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
 
         var app = builder.Build();
-
-        // Включение отладочных страниц и статических файлов
+        
         if (app.Environment.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
