@@ -13,14 +13,14 @@ public class MockCategory : IComicsCategory
             {
                 new Category
                 {
-                    categoryName = "DC", desc = "DC Entertainment является дочерней компанией " +
+                    categoryName = "DC", desc = "DC Entertainment is a subsidiary of " +
                                                 "Warner Bros. Entertainment."
                 },
                 new Category
                 {
                     
-                    categoryName = "Marvel", desc = "Aмериканский издатель комиксов, " +
-                                                    "дочерняя компания  The Walt Disney Company."
+                    categoryName = "Marvel", desc = "American comics publisher, " +
+                                                    "subsidiary of The Walt Disney Company."
                 }
             };
         }

@@ -30,11 +30,11 @@ namespace ComicsShop.Controllers
             }
             else
             {
-                if (string.Equals("marvel", category, StringComparison.OrdinalIgnoreCase))
+                if (string.Equals("Marvel", category, StringComparison.OrdinalIgnoreCase))
                 {
                     comics = _allComics.Comics.Where(x => x.Category.categoryName.Equals("Marvel")).OrderBy(x => x.id);
                 }
-                else if (string.Equals("dc", category, StringComparison.OrdinalIgnoreCase))
+                else if (string.Equals("DC", category, StringComparison.OrdinalIgnoreCase))
                 {
                     comics = _allComics.Comics.Where(x => x.Category.categoryName.Equals("DC")).OrderBy(x => x.id);
                 }
